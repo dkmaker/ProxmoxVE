@@ -1,5 +1,34 @@
 ## Kursusagenda
 
+### Del 1: Introduktion og Forberedelse (30 min)
+- **Hvorfor Virtualisering?** - Historik og fordele
+- **Forudsætninger** - Hardware krav og BIOS konfiguration
+- **VT aktivering** - Intel VT-x / AMD-V check
+
+### Del 2: Proxmox VE Installation (45 min)
+- **Download og installation** af Proxmox VE 9
+- **Netværkskonfiguration** - IP: 172.17.3.15/24, CloudFlare DNS
+- **Første boot og login**
+- **Adgang til Admin Interface** - https://172.17.3.15:8006
+
+### Del 3: Post-Installation og UI (30 min)
+- **Post-Installation Optimering** - Community Scripts
+- **Proxmox UI Gennemgang** - Navigation og grundlæggende indstillinger
+- **Netværk og Storage management**
+
+### Del 4: VM Oprettelse (60 min)
+- **Upload af ISO filer**
+- **Ubuntu VM** - Opsætning med VirtIO drivers og QEMU Guest Agent
+- **Windows VM** - Konfiguration med TPM og VirtIO drivers
+- **SPICE Installation** - Remote desktop adgang
+
+### Del 5: Avancerede Emner (30 min)
+- **Andre Proxmox produkter** - PBS, PMG, Cluster integration
+- **Nyttige ressourcer** og videre læring
+
+**Total varighed:** Ca. 3 timer og 15 minutter  
+**Målgruppe:** Basic niveau - ingen forkundskaber krævet
+
 ## Hvorfor Virtualisering?
 
 Virtualisering har revolutioneret IT-verdenen siden 1960'erne, hvor IBM introducerede konceptet på mainframes. 
