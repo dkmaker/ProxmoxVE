@@ -95,5 +95,28 @@ Proxmox VE kombinerer KVM virtualisering med LXC containers i én open-source pl
 - [Community Scripts Repository](https://community-scripts.github.io/ProxmoxVE/)
 - [Proxmox VE 9 Release Notes](https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_9.x)
 
+## Optional Knowledge - Andre Proxmox Produkter
+
+### Proxmox Backup Server (PBS)
+- Dedikeret backup løsning til Proxmox VE
+- Deduplicering og kryptering af backups
+- Incremental backups med snapshot funktionalitet
+- Integration med Proxmox VE for automatiserede backups
+- **Link:** [Proxmox Backup Server](https://www.proxmox.com/en/proxmox-backup-server)
+
+### Proxmox Mail Gateway (PMG)
+- Mail security gateway til spam og virus beskyttelse
+- Anti-spam og anti-virus scanning
+- Greylistning og DNSBL funktionalitet
+- Web-baseret administration interface
+- Integration med eksisterende mail infrastruktur
+- **Link:** [Proxmox Mail Gateway](https://www.proxmox.com/en/proxmox-mail-gateway)
+
+### Proxmox Cluster Integration
+- Cluster funktionalitet for High Availability (HA)
+- Live migration af VMs mellem nodes
+- Delt storage og automatisk failover
+- Centraliseret management af flere Proxmox servere
+
 ## Målgruppe
 Basic niveau - ingen forkundskaber krævet
