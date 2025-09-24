@@ -1,0 +1,15 @@
+# GitHub Pages Jekyll Configuration
+title: "Proxmox VE Kursus"
+description: "Orange Makers Proxmox VE Installation og Konfiguration Guide"
+
+# GitHub Pages settings
+remote_theme: jekyll-theme-minimal
+plugins:
+  - jekyll-remote-theme
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Additional settings
+show_downloads: false

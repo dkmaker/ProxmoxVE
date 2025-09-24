@@ -1,5 +1,3 @@
-# Proxmox VE Kursus - Orange Makers
-
 ## Kursusagenda
 
 ## Hvorfor Virtualisering?
