@@ -24,11 +24,53 @@ I dag er det fundamentet for moderne datacentre og cloud computing.
 
 Proxmox VE kombinerer KVM virtualisering med LXC containers i én open-source platform.
 
+## Forudsætninger (Prerequisites)
+
+### Hardware Krav
+- **CPU:** 64-bit processor med virtualisering support
+- **RAM:** Minimum 2GB (anbefalet 4GB+)
+- **Storage:** Minimum 32GB ledig plads
+- **Netværk:** Ethernet forbindelse
+
+### BIOS/UEFI Konfiguration
+**VIGTIGT:** Før installation skal virtualisering aktiveres i BIOS/UEFI!
+
+**Intel processorer:**
+- Intel VT-x (Intel Virtualization Technology)
+- Intel VT-d (for device passthrough - valgfrit)
+
+**AMD processorer:**
+- AMD-V (AMD Virtualization)
+- AMD-Vi/IOMMU (for device passthrough - valgfrit)
+
+**Sådan tjekker og aktiverer du VT:**
+1. Genstart computeren og gå ind i BIOS/UEFI (typisk F2, F12, DEL under boot)
+2. Find "Advanced" eller "CPU Configuration" menuen
+3. Look for "Intel VT-x", "AMD-V", "Virtualization Technology" eller lignende
+4. Aktiver funktionen (Enable)
+5. Gem og genstart (Save & Exit)
+
+**Note:** Nogle systemer har VT aktiveret som standard, men det er altid godt at tjekke først.
+
 ### 1. Proxmox VE Installation
 - Download og installation af Proxmox VE 9
 - **Download:** [Proxmox VE 9 ISO](https://www.proxmox.com/en/downloads/proxmox-virtual-environment)
 - Grundlæggende opsætning under installation
 - Første boot og login
+
+#### 1.1 Netværkskonfiguration til Demo
+- **IP Adresse:** 172.17.3.15/24
+- **DNS Servere:** CloudFlare DNS
+  - Primary: 1.1.1.1
+  - Secondary: 1.0.0.1
+- **Gateway:** 172.17.3.1
+
+#### 1.2 Adgang til Admin Interface
+Efter vellykket installation kan du tilgå Proxmox VE web interface på:
+- **URL:** [https://172.17.3.15:8006](https://172.17.3.15:8006)
+- **Brugernavn:** root
+- **Password:** Det password du satte under installationen
+- **Note:** Accepter SSL certifikat advarslen i browseren (self-signed certificate)
 
 ### 2. Post-Installation Optimering
 - Anvendelse af Community Scripts til optimering
